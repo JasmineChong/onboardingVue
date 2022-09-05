@@ -1,4 +1,4 @@
-# my-router-project
+# Vue-project
 
 ## Project setup
 ```
