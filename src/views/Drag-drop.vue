@@ -75,24 +75,6 @@ export default {
         .then((response) => response.json())
         .then((data) => (this.address = data.address));
     },
-    // combine() {
-    //   for (let post in this.usualName) {
-    //     this.info.push({
-    //       id: 0,
-    //       Name: post.given.join(""),
-    //       Gender: this.genders.gender,
-    //     });
-    //     this.info.push({
-    //       id: 1,
-    //       Name: post.given.join(""),
-    //       Birthdate: this.birthdates.birthDate,
-    //     });
-    //     for (let a in this.address) {
-    //       this.info.push({ id: 2, Name: post.given.join(""), Address: a.text });
-    //     }
-    //   }
-    //   return this.info;
-    // },
   },
   computed: {
     usualName() {
@@ -110,7 +92,6 @@ export default {
     this.getGender();
     this.getBirthdate();
     this.getAddress();
-    // this.combine();
   },
 };
 </script>
